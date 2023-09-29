@@ -30,4 +30,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: execute test
-      run: mvn test
+      run: mvn exec:java -D"exec.mainClass"="src.test.Main"

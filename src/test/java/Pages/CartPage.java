@@ -49,7 +49,6 @@ public class CartPage extends ExecutionContext {
         test.log(Status.INFO, "Se elimina el producto en el carrito");
         wait.until(ExpectedConditions.elementToBeClickable(delete)).click();
         wait.until(ExpectedConditions.visibilityOf(cartEmpty));
-        //test.addScreenCaptureFromPath(System.getProperty("user.dir") + "\\" + utils.TakeScreenshot("cartEmpty"));
         test.addScreenCaptureFromPath( utils.TakeScreenshot("cartEmpty"));
     }
 

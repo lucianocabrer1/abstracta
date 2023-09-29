@@ -22,7 +22,7 @@ public class DriverManager {
                 options.addArguments("--disable-infobars");             // Disable the "Chrome is being controlled by automated test software" infobar
                 options.addArguments("--disable-extensions");
                 options.addArguments("--disable-cache");// Disable browser extensions
-                //options.addArguments("--headless");
+                options.addArguments("--headless");
 
                 driver = new ChromeDriver(options);
                 break;
